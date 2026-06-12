@@ -243,3 +243,19 @@
   margin-top: 16px;
   margin-bottom: 10px;
 }
+
+@media (max-width: 820px) {
+  .cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+ .card {
+    width: 100%;
+    min-width: 0;
+  }
+
+ .card h3 {
+    overflow-wrap: anywhere;
+  }
+}

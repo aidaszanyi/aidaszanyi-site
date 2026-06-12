@@ -174,8 +174,7 @@ footer {
   }
 
   .intro,
-  .split,
-  .cards {
+  .split {
     grid-template-columns: 1fr;
     gap: 28px;
   }

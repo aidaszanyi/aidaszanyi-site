@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>A hitben hiszek | Szanyi Aida</title>
+  <meta name="description" content="Szanyi Aida írása hitről, belső irányról és arról a láthatatlan erőről, ami mozgásba hoz.">
+  <style>
+    :root {
+      --bg: #f8f4ee;
+      --paper: #fffaf4;
+      --text: #241f1a;
+      --muted: #766b61;
+      --soft: #e9ded1;
+      --accent: #9a6346;
+      --accent2: #4d6261;
+      --dark: #171513;
+      --max: 1120px;
+      --article: 780px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, Arial, sans-serif;
+      line-height: 1.72;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    .topbar {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 30px 28px 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--text);
+    }
+
+    .brand {
+      font-size: 15px;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    nav a:hover, .back-link:hover, .archive-link:hover {
+      color: var(--accent);
+    }
+
+    main {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px 80px;
+    }
+
+    .article-shell {
+      border-top: 1px solid var(--soft);
+      padding-top: 70px;
+    }
+
+    .article-header {
+      max-width: var(--article);
+      margin: 0 auto 54px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 44px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .kicker {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-size: 12px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 400;
+      font-size: clamp(46px, 7vw, 82px);
+      line-height: 1.02;
+      letter-spacing: -.055em;
+      margin: 0 0 28px;
+      color: var(--text);
+    }
+
+    .lead {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(21px, 3vw, 30px);
+      line-height: 1.38;
+      color: var(--muted);
+      margin: 0 0 28px;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .meta span {
+      padding: 8px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.45);
+      border: 1px solid var(--soft);
+    }
+
+    .article-body {
+      max-width: var(--article);
+      margin: 0 auto;
+      background: rgba(255,255,255,.26);
+      border: 1px solid var(--soft);
+      border-radius: 34px;
+      padding: clamp(30px, 5vw, 58px);
+    }
+
+    .article-body p {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 21px;
+      line-height: 1.72;
+      margin: 0 0 26px;
+      color: var(--text);
+    }
+
+    .article-body p:last-child { margin-bottom: 0; }
+
+    .article-body p:nth-child(3),
+    .article-body p:last-child {
+      margin: 42px 0;
+      padding: clamp(26px, 5vw, 42px);
+      border-radius: 28px;
+      background: var(--dark);
+      color: rgba(255,255,255,.9);
+      font-size: 25px;
+      line-height: 1.62;
+    }
+
+    .article-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .article-footer {
+      max-width: var(--article);
+      margin: 42px auto 0;
+      padding-top: 32px;
+      border-top: 1px solid var(--soft);
+      color: var(--muted);
+      font-size: 15px;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .archive-link {
+      color: var(--accent);
+      border-bottom: 1px solid rgba(154,99,70,.28);
+    }
+
+    footer {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 28px 44px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 760px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+        padding: 24px 22px 18px;
+      }
+
+      nav {
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      main {
+        padding: 0 22px 60px;
+      }
+
+      .article-shell {
+        padding-top: 46px;
+      }
+
+      .back-link {
+        margin-bottom: 34px;
+      }
+
+      .article-body {
+        border-radius: 26px;
+      }
+
+      .article-body p {
+        font-size: 19px;
+      }
+
+      .article-body p:nth-child(3),
+      .article-body p:last-child {
+        font-size: 21px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="../index.html">Szanyi Aida</a>
+    <nav>
+      <a href="../index.html#irasok">Írások</a>
+      <a href="../index.html#rolam">Rólam</a>
+      <a href="../index.html#beszelgetesek">Beszélgetések</a>
+      <a href="../index.html#kapcsolat">Kapcsolat</a>
+    </nav>
+  </header>
+
+  <main>
+    <article class="article-shell">
+      <header class="article-header">
+        <a class="back-link" href="../index.html#irasok">← Vissza az írásokhoz</a>
+        <div class="kicker">Hit · belső irány · mozgás</div>
+        <h1>A hitben hiszek</h1>
+        <p class="lead">Egy írás arról, hogy a hit nem feltétlenül vallás a szó egyszerű értelmében, hanem sokkal több: belső irány, mozgás és felhajtóerő.</p>
+        <div class="meta">
+          <span>2026.06.11.</span>
+          <span>szAida</span>
+          <span>Új írás</span>
+        </div>
+      </header>
+
+      <div class="article-body">
+        <p>Mindig is szerettem ezt a mondatot. Hányszor és hány embernek mondtam én ezt el. Egyszerű, mégis minden benne van, amit erről gondolok. Nem vallásról szól, nem dogmáról, hanem arról a láthatatlan erőről, ami folyamatosan visz előre.</p>
+        <p>Hiszek abban, hogy ha az ember hisz valamiben – bármiben, amihez a lelke kapcsolódni tud –, akkor hegyeket mozgat meg. Nem a hit tárgya számít, hanem az irány, amit a hit maga ad. Teljesen mindegy, hogy van-e szükség eszközre hozzá vagy mindegy mi a hitünk tárgya, a lényeg, hogy hinni kezdj, mert abban a pillanatban már nem vagy tehetetlen. A hit számomra nem megnyugvás, hanem mozgás. Mozgó és felhajtóerő.</p>
+        <p>Egy finom belső áramlás, ami összeköt mindazzal, amit még nem látok, de érzem, hogy ott van és ez a legmélyebb valóságos érzés ott belül.</p>
+        <p>Hiszem azt is, hogy természetes, ha valaki eszközhöz nyúl, hogy hinni tudjon. Van, aki a vallásban találja meg, más a zenében, a természetben, egy kapcsolódásban, vagy épp önmagában. Senkinek sem dolga eldönteni, mi a „jó” vagy „valós” hit. Nem is kell eldönteni ezt, mert nem ez az egész lényege. Elég, ha engedjük egymást hinni - egészen addig, amíg az a hit nem bánt, csak épít.</p>
+        <p>Miközben ezeket a gondolatokat írom, eszembe jutott, hogy talán már írtam erről korábban és igen. Sok évvel ezelőtti bejegyzésem címe: „A hit” - és már akkor ugyanezek a gondolatok formáltak engem.</p>
+        <p>És talán ezért mondom ma is, sok év után, ugyanazzal a bizonyossággal: a hitben hiszek.</p>
+      </div>
+
+      <footer class="article-footer">
+        <a class="archive-link" href="../index.html#irasok">← Vissza az írásokhoz</a>
+        <a class="archive-link" href="https://szaida.blog.hu/2026/06/11/a_hitben_hiszek" target="_blank" rel="noopener">Eredeti bejegyzés a blogon</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer>
+    © 2026 Szanyi Aida
+  </footer>
+</body>
+</html>

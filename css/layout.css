@@ -184,6 +184,12 @@ footer {
   }
 }
 
+@media (min-width: 400px) and (max-width: 500px) {
+    .hero-content {
+        transform: translateY(-100px);
+    }
+}
+
 /* ===== Háttér kulcsszavak ===== */
 
 #rolam,

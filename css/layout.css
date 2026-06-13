@@ -288,7 +288,7 @@ footer {
 
     #coaching::before {
         top: 2%;
-        left: 2%;
+        right: 2%;
         font-size: clamp(28px, 6vw, 34px);
         transform: rotate(2deg);
     }

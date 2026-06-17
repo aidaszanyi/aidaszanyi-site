@@ -37,22 +37,6 @@
   border-color: white;
 }
 
-.bigline {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(30px, 4vw, 48px);
-  line-height: 1.18;
-  letter-spacing: -.035em;
-  color: var(--text);
-  margin: 0;
-}
-
-.pill-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 28px;
-}
-
 .pill {
   border: 1px solid var(--soft);
   background: rgba(255,255,255,.42);
@@ -250,12 +234,106 @@
     gap: 18px;
   }
 
- .card {
+  .card {
     width: 100%;
     min-width: 0;
   }
 
- .card h3 {
+  .card h3 {
     overflow-wrap: anywhere;
   }
+}
+
+.intro .bigline {
+	grid-column: 1 / -1;
+	max-width: 900px;
+	margin: 5px auto 0;
+	text-align: center;
+
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: clamp(30px, 4vw, 48px);
+	line-height: 1.18;
+	letter-spacing: -.035em;
+	font-weight: 400;
+	color: var(--text);
+}
+
+.about-montage-wrapper {
+	width: 100%;
+}
+
+.about-montage {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 28px;
+}
+
+.intro-text p:first-child {
+	margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+
+	.bigline {
+		margin-top: 40px;
+		font-size: clamp(1.8rem, 8vw, 2.6rem);
+	}
+}
+
+.about-energy {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(22px, 2.4vw, 34px);
+  line-height: 1.15;
+  color: var(--dark);
+  margin: 0 0 26px;
+  max-width: 520px;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+  max-width: 430px;
+}
+
+.about-tags span {
+  padding: 8px 13px;
+  border: 1px solid rgba(60,40,20,.12);
+  border-radius: 999px;
+  background: rgba(255,255,255,.72);
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.about-tags span:nth-child(1),
+.about-tags span:nth-child(10) {
+  background: rgba(225, 235, 245, .9);
+  color: #38556b;
+}
+
+.about-tags span:nth-child(3),
+.about-tags span:nth-child(4),
+.about-tags span:nth-child(7) {
+  background: rgba(246, 229, 214, .9);
+  color: #8a5738;
+}
+
+.about-tags span:nth-child(5),
+.about-tags span:nth-child(6) {
+  background: rgba(232, 240, 226, .9);
+  color: #526f45;
+}
+
+.about-tags span:nth-child(2){
+  background: rgba(241, 232, 221, .9);
+  color: #6f5641;
+}
+
+.about-tags-alive span:nth-child(3n),
+.about-tags-alive span:nth-child(4n) {
+  transform: none;
 }

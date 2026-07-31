@@ -1,0 +1,5 @@
+# The Hungarian name-order domain is canonical.
+https://aidaszanyi.hu/* https://szanyiaida.hu/:splat 301!
+https://www.aidaszanyi.hu/* https://szanyiaida.hu/:splat 301!
+https://www.szanyiaida.hu/* https://szanyiaida.hu/:splat 301!
+https://aidaszanyi.netlify.app/* https://szanyiaida.hu/:splat 301!

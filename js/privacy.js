@@ -40,7 +40,7 @@
   }
 
   function showBanner() {
-    const banner = document.createElement('section');
+    const banner = document.createElement('div');
     banner.id = 'privacy-consent-banner';
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-live', 'polite');
@@ -57,10 +57,11 @@
 
     const style = document.createElement('style');
     style.textContent = `
-      #privacy-consent-banner{position:fixed;z-index:9999;left:16px;right:16px;bottom:16px;max-width:760px;margin:auto;background:#fffaf4;color:#241f1a;border:1px solid #d7c8b9;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.22);font:15px/1.5 system-ui,sans-serif}
-      .privacy-consent-content{padding:18px 20px}.privacy-consent-content p{margin:0 0 10px}.privacy-consent-content a{color:#70452f}
-      .privacy-consent-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap}.privacy-consent-actions button{border:1px solid #70452f;border-radius:999px;background:transparent;color:#241f1a;padding:9px 16px;cursor:pointer;font:inherit}.privacy-consent-actions .privacy-consent-accept{background:#70452f;color:#fff}
+      #privacy-consent-banner{position:fixed;z-index:9999;right:14px;bottom:14px;width:min(520px,calc(100% - 28px));background:#fffaf4;color:#241f1a;border:1px solid #d7c8b9;border-radius:12px;box-shadow:0 10px 30px rgba(0,0,0,.2);font:14px/1.4 system-ui,sans-serif}
+      .privacy-consent-content{padding:12px 14px}.privacy-consent-content p{margin:0}.privacy-consent-content p+p{margin-top:3px}.privacy-consent-content a{color:#70452f}
+      .privacy-consent-actions{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-top:10px}.privacy-consent-actions button{border:1px solid #70452f;border-radius:999px;background:transparent;color:#241f1a;padding:7px 13px;cursor:pointer;font:inherit}.privacy-consent-actions .privacy-consent-accept{background:#70452f;color:#fff}
       .privacy-consent-actions button:focus-visible{outline:3px solid #c89570;outline-offset:2px}
+      @media (max-width:480px){#privacy-consent-banner{right:8px;bottom:8px;width:calc(100% - 16px)}.privacy-consent-content{padding:10px 12px}.privacy-consent-actions{margin-top:8px}.privacy-consent-actions button{padding:6px 11px}}
     `;
     document.head.appendChild(style);
     document.body.appendChild(banner);

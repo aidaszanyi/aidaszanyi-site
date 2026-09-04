@@ -61,7 +61,7 @@
       .privacy-consent-content{padding:20px 22px}.privacy-consent-content p{margin:0}.privacy-consent-content p+p{margin-top:6px}.privacy-consent-content a{color:#70452f}
       .privacy-consent-actions{display:flex;gap:10px;justify-content:flex-end;flex-wrap:wrap;margin-top:15px}.privacy-consent-actions button{border:1px solid #675d56;border-radius:999px;background:#675d56;color:#fff;padding:9px 17px;cursor:pointer;font:inherit}.privacy-consent-actions .privacy-consent-accept{border-color:#16824b;background:#16824b;color:#fff;box-shadow:0 3px 10px rgba(22,130,75,.28)}
       .privacy-consent-actions button:focus-visible{outline:3px solid #c89570;outline-offset:2px}
-      @media (max-width:480px){#privacy-consent-banner{right:10px;bottom:10px;width:calc(100% - 20px);font-size:14px}.privacy-consent-content{padding:13px 14px}.privacy-consent-actions{margin-top:10px}.privacy-consent-actions button{padding:7px 13px}}
+      @media (max-width:480px){#privacy-consent-banner{right:10px;bottom:10px;width:calc(100% - 20px);min-height:190px;font-size:15px}.privacy-consent-content{box-sizing:border-box;min-height:190px;padding:22px 18px;display:flex;flex-direction:column;justify-content:center}.privacy-consent-actions{margin-top:18px}.privacy-consent-actions button{padding:9px 16px}}
     `;
     document.head.appendChild(style);
     document.body.appendChild(banner);

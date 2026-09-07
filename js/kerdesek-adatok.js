@@ -1,0 +1,27 @@
+// A főoldali kérdéskártyák gyűjteménye. Az idézőjelek közötti szövegek szabadon szerkeszthetők.
+window.QUESTIONS = [
+  'Ha senkinek nem kellene megfelelned, ugyanazt választanád?',
+  'Kinek a hangját hallod, amikor azt mondod: „nem lehet” vagy „nem tudom”?',
+  'Mitől félsz: a szembenézéstől... vagy attól, hogy a szembenézés fájni fog?',
+  'Mit tudsz biztosan, és mit tettél hozzá te a fejedben?',
+  'Mire mondasz igent, miközben belül nemet szeretnél?',
+  'Mi történne, ha most nem magyaráznád meg magadnak rögtön a másik viselkedését?',
+  'Mit tudsz már pontosan elmagyarázni magadról, amit még mindig pont ugyanúgy csinálsz?',
+  'Melyik mintádat nevezed személyiségednek, mert még nem ismered magad nélküle?',
+  'Mi az, amit már megszoktál, de valójában nincs rendben neked?',
+  'Mit látnál ebből a helyzetből, ha egy barátod mesélné el?',
+  'Mit próbálsz megőrizni azzal, hogy minden marad a régiben?',
+  'Mi ismétlődik akkor is, amikor a szereplők már mások?',
+  'Mi az, amit szeretnél kimondani, de mindig átírod magadban?',
+  'Kinek a jóváhagyására vársz ahhoz, hogy komolyan vedd, amit szeretnél?',
+  'Miből vennéd észre, hogy ezúttal valóban te választottál?',
+  'Miért mindig majd? Mikor állsz fel és cselekedsz végre?',
+  'Mit teszel azzal az érzéseddel, amelyik nem illik a magadról alkotott képedbe?',
+  'Mi tartja egyben azt a mintád, amelyből közben annyira szeretnél kilépni?',
+  'Milyen más magyarázat férne még el amellett, amiben most biztos vagy?',
+  'Mi lenne az első apró lépés, amit már a saját válaszodból tennél meg?',
+  'Mindent figyelembe vettél. Magadat hol számoltad bele?',
+  'A „bonyolult” pontos leírás - vagy még időt kérsz vele ahhoz, amit már tudsz?',
+  'Ha minden új felismerésed ugyanaz a kör, mit csinálsz valójában: megérted magad, vagy meggyőzöd?',
+  'Mit nevezel magadnál türelemnek, amit egy barátod életében már önfeladásnak látnál?'
+];

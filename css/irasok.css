@@ -1,0 +1,41 @@
+.writing-index .topbar {
+  position: static;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 30px 28px;
+  color: var(--text);
+  mix-blend-mode: normal;
+  border-bottom: 1px solid var(--soft);
+}
+
+.writing-index main { padding-top: 32px; }
+.writing-heading { margin: 52px 0 34px; }
+.writing-heading h1 { font-size: clamp(48px, 7vw, 76px); }
+.writing-filters { display: flex; flex-wrap: wrap; gap: 10px; }
+.writing-filters[hidden], .writing-index .card[hidden] { display: none; }
+.writing-filters button {
+  padding: 11px 20px;
+  border: 1px solid var(--soft);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: 16px;
+  cursor: pointer;
+}
+.writing-filters button:hover { border-color: var(--accent); }
+.writing-filters button[aria-pressed="true"] {
+  color: white;
+  background: var(--accent2);
+  border-color: var(--accent2);
+}
+.writing-filters button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+.writing-count { margin: 22px 0 0; font-size: 14px; }
+.writing-index .cards { margin-top: 18px; }
+@media (max-width: 820px) {
+  .writing-index .topbar { flex-direction: column; align-items: flex-start; gap: 18px; padding: 24px 22px; }
+  .writing-index nav { display: flex; flex-wrap: wrap; gap: 18px; }
+}

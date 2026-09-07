@@ -105,6 +105,31 @@
   font-size: 14px;
 }
 
+.contact-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 40px;
+  margin-top: 28px;
+}
+
+.contact-option {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.contact-option-title {
+  color: var(--accent);
+  font-size: 18px;
+  border-bottom: 1px solid rgba(154,99,70,.35);
+}
+
+.contact-option-detail { color: var(--muted); font-size: 14px; }
+.contact-option:hover .contact-option-title { color: var(--text); }
+.contact-option:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+
 .cards {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -206,12 +231,25 @@
 }
 
 .small-note {
-  font-size: 15px;
+  font-size: 13px;
   color: var(--muted);
   margin-top: 26px;
   border-top: 1px solid var(--soft);
   padding-top: 20px;
 }
+
+.all-writings {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 12px 22px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  color: var(--text);
+  font-size: 16px;
+}
+
+.all-writings:hover { background: var(--paper); }
+.all-writings:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
 
 .service-label {
   margin-bottom: 14px;
@@ -224,7 +262,7 @@
 
 .text-cta {
   display: inline-block;
-  margin: 22px 0 26px;
+  margin: 8px 0 26px;
   color: var(--accent);
   font-weight: 600;
   border-bottom: 1px solid rgba(154,99,70,.35);

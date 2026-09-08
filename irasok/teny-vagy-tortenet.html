@@ -264,7 +264,7 @@
       }
 
       main {
-        padding: 0 22px 60px;
+        padding: 0 20px 60px;
       }
 
       .article-shell {
@@ -276,16 +276,25 @@
       }
 
       .article-body {
-        border-radius: 26px;
+        background: transparent;
+        border: 0;
+        border-radius: 0;
+        padding: 0;
       }
 
       .article-body p {
         font-size: 19px;
+        line-height: 1.5;
       }
 
       .article-body p.article-highlight,
       .article-body p.article-question {
         font-size: 21px;
+      }
+
+      .article-body > p:first-child {
+        border-left: 2px solid var(--accent);
+        padding-left: 14px;
       }
     }
   </style>

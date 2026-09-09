@@ -1,6 +1,14 @@
 // A kártyák közös adatai. Sorrend: legfrissebb elöl. Itt szerkeszd a címeket és bevezetőket.
 window.WRITINGS = [
   {
+    "file": "onelfogadas.html",
+    "title": "Önelfogadás - itt az újabb elvárás: már magadat is szeretned kell",
+    "description": "Még a csapból is ez folyik: szeresd és fogadd el magad. Tényleg ennyire egyszerű?",
+    "category": "Önismeret",
+    "categoryId": "onismeret",
+    "year": 2026
+  },
+  {
     "file": "teny-vagy-tortenet.html",
     "title": "Tény vagy történet? - Túlgondolás?",
     "description": "Mit tudsz valójában a másik viselkedéséről és mit teszel te hozzá fejben? Avagy a másik viselkedésének túlgondolása...",

@@ -199,6 +199,8 @@ footer {
   grid-template-columns: 1fr;
 }
 
+.menu-toggle { display: none; }
+
 @media (max-width: 820px) {
   .topbar {
     position: absolute;
@@ -215,7 +217,84 @@ footer {
   }
 
   nav {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .home-topbar,
+  .home-topbar.scrolled {
+    position: fixed;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 6px 20px;
+    color: var(--text);
+    background: var(--bg);
+    box-shadow: 0 1px 0 var(--soft);
+  }
+
+  .home-topbar .brand { font-size: 17px; }
+
+  .home-topbar nav {
+    width: 100%;
+    gap: 0;
+  }
+
+  .home-topbar nav a {
+    display: block;
+    padding: 10px 14px;
+    border-radius: 10px;
+  }
+
+  .home-topbar.navigation-ready nav { display: none; }
+
+  .home-topbar.menu-open nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    max-height: calc(100dvh - 90px);
+    overflow-y: auto;
+    border-top: 1px solid var(--soft);
+    padding-top: 8px;
+  }
+
+  .menu-toggle:not([hidden]) {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 8px 12px;
+    border: 1px solid var(--soft);
+    border-radius: 999px;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .menu-icon,
+  .menu-icon::before,
+  .menu-icon::after {
+    display: block;
+    width: 16px;
+    height: 2px;
+    background: currentColor;
+  }
+
+  .menu-icon { position: relative; }
+  .menu-icon::before,
+  .menu-icon::after { content: ''; position: absolute; }
+  .menu-icon::before { top: -5px; }
+  .menu-icon::after { top: 5px; }
+  .menu-open .menu-icon { background: transparent; }
+  .menu-open .menu-icon::before { top: 0; transform: rotate(45deg); }
+  .menu-open .menu-icon::after { top: 0; transform: rotate(-45deg); }
+
+  .home-topbar nav a:hover { background: var(--soft); }
+  .home-topbar a:focus-visible,
+  .menu-toggle:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
   }
 
   .hero-content {

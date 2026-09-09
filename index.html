@@ -12,9 +12,13 @@
   <link rel="stylesheet" href="css/components.css">
 </head>
 <body>
-  <header class="topbar">
+  <header class="topbar home-topbar">
     <a class="brand" href="#">Szanyi Aida</a>
-    <nav>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation" hidden>
+      <span class="menu-icon" aria-hidden="true"></span>
+      <span>Menü</span>
+    </button>
+    <nav id="main-navigation" aria-label="Fő navigáció">
 	  <a href="#kerdesek">Kérdések</a>
       <a href="#irasok">Írások</a>
       <a href="#rolam">Rólam</a>
@@ -228,6 +232,7 @@
     window.addEventListener('scroll', updateTopbar, { passive: true });
   </script>
   
+  <script src="js/navigation.js"></script>
   <script src="js/kerdesek-adatok.js"></script>
   <script src="js/kerdesek.js"></script>
   <script src="js/irasok-adatok.js"></script>

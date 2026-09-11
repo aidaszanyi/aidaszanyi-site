@@ -1,6 +1,14 @@
 // A kártyák közös adatai. Sorrend: legfrissebb elöl. Itt szerkeszd a címeket és bevezetőket.
 window.WRITINGS = [
   {
+    "file": "jol-birod-akkor-tessek-meg-egy-kicsi.html",
+    "title": "Jól bírod? Akkor tessék, még egy kicsi",
+    "description": "A környezet gyorsan hozzászokik ahhoz, amit újra és újra elbírsz. A kérdés az, te mikor veszed észre, hogy már nem akarod tovább vinni.",
+    "category": "Önismeret",
+    "categoryId": "onismeret",
+    "year": 2026
+  },
+  {
     "file": "onelfogadas.html",
     "title": "Önelfogadás - itt az újabb elvárás: már magadat is szeretned kell",
     "description": "Még a csapból is ez folyik: szeresd és fogadd el magad. Tényleg ennyire egyszerű?",

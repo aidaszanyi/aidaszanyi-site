@@ -48,7 +48,7 @@
     banner.innerHTML = `
       <div class="privacy-consent-content">
         <p><strong>Adatkezelési beállítások</strong></p>
-        <p>Az oldal opcionális sütiket használ a látogatottság méréséhez és az optimális felhasználói élmény érdekében. <a href="${window.PRIVACY_NOTICE_PATH || 'adatkezeles.html'}">Részletek</a></p>
+        <p>Az oldal opcionális sütiket használ a látogatottság méréséhez és az optimális felhasználói élmény érdekében. <a href="${window.PRIVACY_NOTICE_PATH || '/adatkezeles/'}">Részletek</a></p>
         <div class="privacy-consent-actions">
           <button type="button" data-consent="rejected">Elutasítom</button>
           <button type="button" class="privacy-consent-accept" data-consent="accepted">Elfogadom</button>

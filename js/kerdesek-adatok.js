@@ -23,5 +23,9 @@ window.QUESTIONS = [
   'Mindent figyelembe vettél. Magadat hol számoltad bele?',
   'A „bonyolult” pontos leírás - vagy még időt kérsz vele ahhoz, amit már tudsz?',
   'Ha minden új felismerésed ugyanaz a kör, mit csinálsz valójában: megérted magad, vagy meggyőzöd?',
-  'Mit nevezel magadnál türelemnek, amit egy barátod életében már önfeladásnak látnál?'
+  'Mit nevezel magadnál türelemnek, amit egy barátod életében már önfeladásnak látnál?',
+  'Biztos, hogy nincs választásod vagy csak egyik következményt sem akarod vállalni?',
+  'Melyik sebedet nevezed személyiségednek, mert félelmetes lenne nélküle megismerni magad?',
+  'Mit kapsz attól a helyzettől, amelyből állítólag annyira szeretnél kilépni, de mégis benne maradsz?',
+  'Mi van, ha nem túl sokat kérsz - csak túl régóta kéred attól, aki nem akarja megadni?'
 ];

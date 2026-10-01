@@ -61,7 +61,7 @@
 .coaching-teaser h2 {
   max-width: 760px;
   margin-bottom: 0;
-  font-size: clamp(36px, 3.7vw, 44px);
+  font-size: clamp(32px, 3vw, 38px);
 }
 
 .coaching-teaser-action p {
@@ -304,6 +304,37 @@
   border-bottom: 1px solid rgba(154,99,70,.35);
 }
 
+.booking-trigger {
+  display: inline-block;
+  padding: 13px 19px;
+  border: 1px solid var(--accent);
+  border-radius: 999px;
+  background: var(--accent);
+  color: white;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.booking-trigger:hover { background: var(--text); border-color: var(--text); }
+
+.booking-trigger:focus-visible {
+  outline: 3px solid rgba(154,99,70,.35);
+  outline-offset: 4px;
+}
+
+.booking-contact-intro {
+  max-width: 760px;
+  margin: 34px 0 30px;
+  padding: 24px 26px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 20px 20px 0;
+  background: var(--paper);
+}
+
+.booking-contact-intro p { margin: 0 0 18px; }
+
+
 .archive {
   display: inline-block;
   color: var(--accent);
@@ -376,6 +407,23 @@
 .closing-text {
   margin-top: 16px;
   margin-bottom: 10px;
+}
+
+@media (min-width: 821px) {
+  .question-grid {
+    gap: 14px;
+    margin-top: 38px;
+  }
+
+  .question-card {
+    min-height: 190px;
+    padding: 20px;
+  }
+
+  .question-card p {
+    margin-top: 18px;
+    font-size: clamp(20px, 1.8vw, 26px);
+  }
 }
 
 @media (max-width: 820px) {

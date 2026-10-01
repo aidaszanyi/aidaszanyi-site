@@ -1,6 +1,14 @@
 // Automatikusan generált fájl. A cikkadatokat a data/irasok.json fájlban szerkeszd.
 window.WRITINGS = [
   {
+    "file": "monogamok-vagyunk-vagy-csak-ezt-tanultuk/",
+    "title": "Monogámok vagyunk. Vagy csak ezt tanultuk?",
+    "description": "A megcsalás fénykorát éli, vagy csak több az információnk róla? Valójában az ember monogám lény, vagy csak a társadalmi szerepeknek próbálunk megfelelni? És egyáltalán: van különbség monogámia és hűség között?",
+    "category": "Kapcsolatok",
+    "categoryId": "kapcsolatok",
+    "year": 2026
+  },
+  {
     "file": "nem-kontrollallak-csak-szeretnem-ha-ugy-csinalnad-ahogy-en-gondolom/",
     "title": "Nem kontrollállak - csak szeretném, ha úgy csinálnád, ahogy én gondolom",
     "description": "A kontrollról sokan azt gondolják, hogy az valami nagyon látványos dolog: megmondani a másiknak, hova mehet, kivel beszélhet, mit csinálhat. Így aztán könnyű azt mondani: „Én nem vagyok kontrolláló.”",

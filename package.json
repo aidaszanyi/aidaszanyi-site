@@ -1,0 +1,8 @@
+{
+  "name": "aidaszanyi-site",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-irasok.mjs",
+    "check": "node scripts/build-irasok.mjs --check"
+  }
+}

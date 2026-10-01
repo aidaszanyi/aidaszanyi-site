@@ -1,12 +1,12 @@
-// Automatikusan generált fájl. A cikkadatokat a data/irasok.json fájlban szerkeszd.
-window.WRITINGS = [
+[
   {
     "file": "nem-kontrollallak-csak-szeretnem-ha-ugy-csinalnad-ahogy-en-gondolom/",
     "title": "Nem kontrollállak - csak szeretném, ha úgy csinálnád, ahogy én gondolom",
     "description": "A kontrollról sokan azt gondolják, hogy az valami nagyon látványos dolog: megmondani a másiknak, hova mehet, kivel beszélhet, mit csinálhat. Így aztán könnyű azt mondani: „Én nem vagyok kontrolláló.”",
     "category": "Önismeret",
     "categoryId": "onismeret",
-    "year": 2026
+    "year": 2026,
+    "titleClass": "article-title-compact"
   },
   {
     "file": "jol-birod-akkor-tessek-meg-egy-kicsi/",
@@ -14,7 +14,12 @@ window.WRITINGS = [
     "description": "A környezet gyorsan hozzászokik ahhoz, amit újra és újra elbírsz. A kérdés az, te mikor veszed észre, hogy már nem akarod tovább vinni.",
     "category": "Önismeret",
     "categoryId": "onismeret",
-    "year": 2026
+    "year": 2026,
+    "titleClass": "article-title-compact",
+    "heading": {
+      "title": "Jól bírod?",
+      "subtitle": "Akkor tessék, még egy kicsi. Amikor az erődből szerep lesz, a környezeted pedig megtanulja: majd te megoldod."
+    }
   },
   {
     "file": "onelfogadas/",
@@ -22,7 +27,11 @@ window.WRITINGS = [
     "description": "Még a csapból is ez folyik: szeresd és fogadd el magad. Tényleg ennyire egyszerű?",
     "category": "Önismeret",
     "categoryId": "onismeret",
-    "year": 2026
+    "year": 2026,
+    "heading": {
+      "title": "Önelfogadás",
+      "subtitle": "Tényleg csak el kellene fogadnod magad és hirtelen minden szép és jó lesz? Nem, ennél sokkal összetettebb."
+    }
   },
   {
     "file": "teny-vagy-tortenet/",
@@ -30,7 +39,11 @@ window.WRITINGS = [
     "description": "Mit tudsz valójában a másik viselkedéséről és mit teszel te hozzá fejben? Avagy a másik viselkedésének túlgondolása...",
     "category": "Önismeret",
     "categoryId": "onismeret",
-    "year": 2026
+    "year": 2026,
+    "heading": {
+      "title": "Tény vagy történet?",
+      "subtitle": "Mit tudsz valójában a másik viselkedéséről és mit teszel te hozzá fejben?"
+    }
   },
   {
     "file": "hatarok-meghuzasa-miert-nehez-nemet-mondani/",
@@ -54,7 +67,8 @@ window.WRITINGS = [
     "description": "Mit jelent valóban mélynek lenni? És mi történik, amikor valaki nem menekül a saját belső valósága elől?",
     "category": "Önismeret",
     "categoryId": "onismeret",
-    "year": 2025
+    "year": 2025,
+    "titleClass": "article-title-compact"
   },
   {
     "file": "az-ut-maga-az-elet/",
@@ -64,4 +78,4 @@ window.WRITINGS = [
     "categoryId": "onismeret",
     "year": 2025
   }
-];
+]

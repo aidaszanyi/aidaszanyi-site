@@ -6,7 +6,10 @@
     window.WRITINGS.slice(0, limit).forEach((writing) => {
       const card = document.createElement('a');
       card.className = 'card article-card';
-      card.href = (list.dataset.base || '') + writing.file;
+      const articlePath = window.location.protocol === 'file:'
+        ? `${writing.file.replace(/\/$/, '')}.html`
+        : writing.file;
+      card.href = (list.dataset.base || '') + articlePath;
       card.dataset.category = writing.categoryId;
       const fields = [
         ['div', 'article-meta', `${writing.category} · ${writing.year}`],

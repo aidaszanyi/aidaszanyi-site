@@ -323,16 +323,69 @@
   outline-offset: 4px;
 }
 
-.booking-contact-intro {
-  max-width: 760px;
+.contact-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
   margin: 34px 0 30px;
-  padding: 24px 26px;
-  border-left: 3px solid var(--accent);
-  border-radius: 0 20px 20px 0;
-  background: var(--paper);
 }
 
-.booking-contact-intro p { margin: 0 0 18px; }
+.contact-service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 22px;
+  border: 1px solid var(--soft);
+  border-radius: 18px;
+  background: rgba(255,255,255,.36);
+}
+
+.contact-service-label {
+  margin-bottom: 7px;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.contact-service-card h3 {
+  margin: 0 0 10px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(19px, 2vw, 23px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.contact-service-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-service-card a:not(.booking-trigger) {
+  color: var(--accent);
+  border-bottom: 1px solid rgba(154,99,70,.35);
+}
+
+.contact-service-card a:not(.booking-trigger):hover { color: var(--text); }
+
+.contact-service-card a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+.contact-service-card .booking-trigger {
+  margin-top: 18px;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+
+.contact-service-card .contact-service-note {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--soft);
+  font-size: 13px;
+}
 
 .archive {
   display: inline-block;
@@ -436,6 +489,8 @@
 
   .question-grid { grid-template-columns: 1fr; }
   .question-card { min-height: 190px; }
+
+  .contact-service-grid { grid-template-columns: 1fr; }
 
   .cards {
     grid-template-columns: 1fr;

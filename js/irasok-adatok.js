@@ -1,6 +1,14 @@
 // Automatikusan generált fájl. A cikkadatokat a data/irasok.json fájlban szerkeszd.
 window.WRITINGS = [
   {
+    "file": "a-nok-csodalatra-a-ferfiak-elismeresre-vagynak/",
+    "title": "A nők csodálatra, a férfiak elismerésre vágynak?",
+    "description": "Nemrég valaki azt mondta nekem, hogy a nők csodálatot, a férfiak pedig elismerést igényelnek. Vajon valóban másra vágyunk?",
+    "category": "Önismeret",
+    "categoryId": "onismeret",
+    "year": 2026
+  },
+  {
     "file": "monogamok-vagyunk-vagy-csak-ezt-tanultuk/",
     "title": "Monogámok vagyunk. Vagy csak ezt tanultuk?",
     "description": "A megcsalás fénykorát éli, vagy csak több az információnk róla? Valójában az ember monogám lény, vagy csak a társadalmi szerepeknek próbálunk megfelelni? És egyáltalán: van különbség monogámia és hűség között?",

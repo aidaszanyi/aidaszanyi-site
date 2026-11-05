@@ -2,11 +2,15 @@
   {
     "file": "a-nok-csodalatra-a-ferfiak-elismeresre-vagynak/",
     "title": "A nők csodálatra, a férfiak elismerésre vágynak?",
-    "description": "Nemrég valaki azt mondta nekem, hogy a nők csodálatot, a férfiak pedig elismerést igényelnek. Vajon valóban másra vágyunk?",
+    "description": "Nemrég valaki azt mondta nekem, hogy a nők csodálatot, a férfiak pedig elismerést igényelnek. Alapvetően szeretem az összes ember, összes nézőpontját, így elgondolkodtatott ez a nézőpont is, és jó szokásomhoz híven, elkezdtem a mélyére ásni.",
     "category": "Önismeret",
     "categoryId": "onismeret",
     "year": 2026,
-    "titleClass": "article-title-compact"
+    "titleClass": "article-title-compact",
+    "heading": {
+      "title": "A nők csodálatra, a férfiak elismerésre vágynak?",
+      "subtitle": "Nemrég valaki azt mondta nekem, hogy a nők csodálatot, a férfiak pedig elismerést igényelnek. Alapvetően szeretem az összes ember, összes nézőpontját, így elgondolkodtatott ez a nézőpont is, és jó szokásomhoz híven, elkezdtem a mélyére ásni."
+    }
   },
   {
     "file": "monogamok-vagyunk-vagy-csak-ezt-tanultuk/",
